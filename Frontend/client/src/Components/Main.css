@@ -1,0 +1,178 @@
+/* Main Component Styling */
+.quiz-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark background for quiz container */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    color: #fff; /* White text for readability */
+    border: 1px solid white;
+  }
+  
+  /* Header Styling */
+  h1 {
+    color: #f39c12; /* Bright yellow for header */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #ecf0f1; /* Light grey for welcome message */
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* Question Section */
+  .question-container {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    color: #ecf0f1; /* Light grey for question text */
+
+  }
+  
+  .question-container p {
+    font-weight: 600;
+  }
+  
+  /* Options Section */
+  .options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 12px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  label:hover {
+    color: #f39c12; /* Change text color on hover */
+  }
+  
+  input[type="radio"] {
+    margin-right: 15px;
+    accent-color: #f39c12; /* Color for radio button */
+  }
+  
+  /* Button Styling */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Subtle upward movement on hover */
+  }
+  
+  button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Submit Button Styling */
+  .submit-container {
+    margin-top: 30px;
+  }
+  
+  /* Result Section */
+  .result {
+    text-align: center;
+  }
+  
+  .result h2 {
+    font-size: 2rem;
+    color: #f39c12; /* Yellow for the result heading */
+  }
+  
+  .result h3 {
+    font-size: 1.5rem;
+    color: #ecf0f1; /* Light grey for leaderboard text */
+  }
+  
+  /* Leaderboard Section */
+  .leaderboard {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333; /* Dark grey background for leaderboard */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .leaderboard li {
+    font-size: 1.2rem;
+    color: #ecf0f1; /* Light grey text */
+    margin-bottom: 15px;
+    background-color: #2c3e50; /* Dark grey background for each score item */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.2s ease; /* Subtle hover effect */
+  }
+  
+  .leaderboard li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .leaderboard li strong {
+    color: #f39c12; /* Yellow color for rank and name */
+    font-weight: 700;
+  }
+  
+  /* Loading State */
+  p {
+    font-size: 1.2rem;
+    color: #ecf0f1; /* Light grey color for loading text */
+  }
+  
+  /* No Scores Available Message */
+  p {
+    font-size: 1.2rem;
+    color: #ecf0f1; /* Light grey for no scores message */
+  }
+  /* Main.css */
+
+/* Timer container styles */
+.timer-container {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ff4757; /* Red color for timer */
+    font-weight: bold;
+  }
+  
+  /* Add a smooth transition effect to the progress bar */
+  .progress-bar-inner {
+    height: 100%;
+    background-color: #3498db; /* Progress bar color */
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+  }
+  
